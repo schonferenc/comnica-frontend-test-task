@@ -48,6 +48,14 @@ Mi lehet ezzel a működéssel az általános probléma?
 
 Az ilyen floating label inputokkal az általános probléma, hogy a felhasználók azt hihetik, hogy a mező már ki van töltve, holott üres. Továbbá, akadálymentességi problémát okozhat a látásérültek számára.
 
+
+## Task Extra:
+
+Elkészítettem figmában is a feladat terveit, a public/figma mappa tartalmazza a fájlt, amit figmával meg lehet nyitni. 
+
+
+![plot](./public/figma/Comnica.jpg)
+
 ---
 ---
 ---
