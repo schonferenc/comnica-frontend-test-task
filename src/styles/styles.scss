@@ -1,0 +1,41 @@
+@import "./variables.scss";
+@import "./typography.scss";
+
+/* Base */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    color: $text-dark;
+
+    /* Medis Querys */
+    @media screen and (max-width: 300px) {
+        word-break: break-all;
+    }
+}
+
+body {
+    @include body-regular;
+}
+
+::-moz-selection {
+    background: $primary;
+    color: $grey-100;
+}
+
+::selection {
+    background: $primary;
+    color: $grey-100;
+}
+
+:focus-visible:not(textarea, input, body, html) {
+    outline: none;
+    border: 1px $primary solid;
+}

@@ -1,0 +1,28 @@
+/* Brand */
+
+$primary: #186553;
+$primary-medium: #20876f;
+$primary-light: #29a98b;
+$accent: #682c5d;
+
+$text-dark: #31363c;
+$grey-100: #fff;
+
+$bg-linear-darkgreen: linear-gradient(to bottom, #d4ede7, #acddd1);
+$bg-linear-lightgreen: linear-gradient(to bottom, #ecf7f3, #d9efeb);
+
+/* Transition */
+$transition: 0.2s;
+
+/* Breakpoints */
+$xs: 360px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1500px;
+
+$breakpoint: $lg;
+
+/* Helpers */
+$header-height: 74px;

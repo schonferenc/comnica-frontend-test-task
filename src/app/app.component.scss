@@ -1,0 +1,170 @@
+@import "../styles/variables.scss";
+
+/* Header */
+header {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-inline: 60px;
+    height: $header-height;
+    z-index: 1000;
+
+    .container {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 48px;
+        }
+    }
+}
+
+/* Main Layout */
+main.layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "left-column right-column";
+
+    /* Left Column */
+    .left-column {
+        grid-area: left-column;
+        background: $bg-linear-darkgreen;
+        padding: 190px 60px;
+
+        /* Content */
+        .content {
+            display: flex;
+            gap: 60px;
+
+            /* Main Text */
+            .main-text {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                h1 {
+                    color: $primary;
+                }
+            }
+
+            /* Image */
+            .bg-laptop {
+                max-width: 400px;
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    /* Right Column */
+    .right-column {
+        grid-area: right-column;
+        background: $bg-linear-lightgreen;
+        padding: 190px 60px;
+
+        /* Content */
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+
+            h2 {
+                color: $accent;
+            }
+
+            p {
+                line-height: 1.6;
+            }
+
+            button {
+                margin-top: 16px;
+            }
+        }
+    }
+}
+
+/* Media Queries */
+
+/* Under 1200px */
+@media screen and (max-width: $xl) {
+    main.layout {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "left-column"
+            "right-column";
+
+        .left-column {
+            padding-bottom: 120px;
+        }
+
+        .right-column {
+            padding-block: 120px;
+        }
+    }
+}
+
+/* Under 768px */
+@media screen and (max-width: $md) {
+    main.layout {
+        /* Left Column */
+        .left-column {
+            padding-block: 120px 60px;
+
+            .content {
+                flex-wrap: wrap;
+                gap: 40px;
+
+                /* Main Text */
+                .main-text {
+                    min-width: 100%;
+                }
+
+                /* Image */
+                .bg-laptop {
+                    margin-inline: auto;
+                    max-width: 250px;
+                }
+            }
+        }
+
+        /* Right Column */
+        .right-column {
+            padding-block: 60px;
+        }
+    }
+}
+
+/* Under 576px */
+@media screen and (max-width: $sm) {
+    /* Header */
+    header {
+        padding-inline: 40px;
+
+        .container {
+            img {
+                height: 40px;
+            }
+        }
+    }
+    main.layout {
+        /* Left Column */
+        .left-column {
+            padding-inline: 40px;
+            padding-block: 120px 40px;
+
+            .content {
+                gap: 40px;
+            }
+        }
+
+        /* Right Column */
+        .right-column {
+            padding-inline: 40px;
+            padding-block: 40px;
+        }
+    }
+}
