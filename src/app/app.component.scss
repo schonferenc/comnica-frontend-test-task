@@ -8,7 +8,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding-inline: 60px;
+    padding-inline: 40px;
     height: $header-height;
     z-index: 1000;
 
@@ -50,11 +50,13 @@ main.layout {
                 h1 {
                     color: $primary;
                 }
+                // min-width: 510px;
             }
 
             /* Image */
             .bg-laptop {
                 max-width: 350px;
+                // min-width: 200px;
                 width: 100%;
                 height: auto;
             }
@@ -75,6 +77,10 @@ main.layout {
 
             h2 {
                 color: $accent;
+
+                span {
+                    display: block;
+                }
             }
 
             p {
@@ -99,7 +105,7 @@ main.layout {
             "right-column";
 
         .left-column {
-            padding-bottom: 120px;
+            padding-block: 190px 120px;
         }
 
         .right-column {
@@ -113,7 +119,7 @@ main.layout {
     main.layout {
         /* Left Column */
         .left-column {
-            padding-block: 120px 60px;
+            padding-block: 140px 60px;
 
             .content {
                 flex-wrap: wrap;

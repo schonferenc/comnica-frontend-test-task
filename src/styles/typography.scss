@@ -1,15 +1,15 @@
 /* Mixins */
 
 @mixin display-1 {
-    font-size: 40px;
+    font-size: 28px;
     font-family: Roboto;
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 125%;
 
     // under 769px
-    @media screen and (max-width: $md) {
-        font-size: 32px;
+    @media screen and (max-width: $sm) {
+        font-size: 24px;
     }
 }
 
@@ -38,38 +38,38 @@
 }
 
 @mixin h1 {
-    font-size: 60px;
+    font-size: 48px;
     font-family: Roboto;
     font-weight: 700;
     letter-spacing: 0em;
     line-height: 125%;
 
     // under 1201px
-    @media screen and (max-width: $xl) {
-        font-size: 54px;
-    }
+    // @media screen and (max-width: $xl) {
+    //     font-size: 54px;
+    // }
 
     // under 769px
-    @media screen and (max-width: $md) {
-        font-size: 40px;
+    @media screen and (max-width: $sm) {
+        font-size: 36px;
     }
 }
 
 @mixin h2 {
-    font-size: 44px;
+    font-size: 28px;
     font-family: Roboto;
     font-weight: 700;
     letter-spacing: 0em;
     line-height: 1.25;
 
     // under 993px
-    @media screen and (max-width: $lg) {
-        font-size: 34px;
-    }
+    // @media screen and (max-width: $lg) {
+    //     font-size: 34px;
+    // }
 
     // under 577px
     @media screen and (max-width: $sm) {
-        font-size: 32px;
+        font-size: 24px;
     }
 }
 
