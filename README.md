@@ -1,5 +1,58 @@
-# comnica-frontend-test-task
-Test task for the Comnica frontend developer position.
+# Feladatok és Válaszok
+
+Ebben a dokumentumban a különböző feladatokra adott válaszok találhatók. Kérlek, olvasd végig a leírásokat és a megoldásokat, mivel ezek segíthetnek a projekt teljes megértésében és végrehajtásában.
+
+## Task 1:
+Az alábbi kép alapján készítsd el a felületet AngularJS, hyperapp vagy React framework használatával és töltsd fel valahova, vagy küldd vissza e-mailben!
+
+a) logót, az illusztrációt valamint a háttérhez használt képet tetszőlegesen helyettesítsd be
+
+b) betűtípus: Roboto
+
+c) színkódok:
+
+#31363c
+#29a98b; #20876f; #186553;
+#682c5d
+d) a gombot lehetőség szerint szervezd ki egy komponensbe, illetve kattintásra írjon valamit a console-ra
+
+e) minden más (elhelyezés, méretezés, margin, padding…stb.) rád van bízva, légy kreatív és munkádra igényes! slightly smiling face
+
+![plot](./public/images/tasks/task1.png)
+
+## Task 2: 
+Adott egy gomb. Elvileg minden rendben kód szinten, mégsem csinál semmit se hover, se egyéb eseményre (nem disabled). Mi lehet a probléma, mi okozhat ilyen jelenséget?
+
+**Válasz:**  
+
+A gombon vagy a szülőelemén olyan CSS beállítások lehetnek, amelyek letiltják az interaktivitást, például ``pointer-events: none;``, ami megakadályozza a gomb használatát.
+
+## Task 3:
+Írj egy tetszőleges JS funkciót, ami lekér egy felhasználó listát egy képzeletbeli API-ról, majd miután ezt sikerrel megtette, lekér egy szín listát, majd miután ez is sikerült, egy tetszőleges színt rendel a 1-1 felhasználóhoz és így adja vissza a felhasználók listáját. Hiba esetén a console-ra ír illetve eredménytől függetlenül a console-ra írja, ha végzett.
+
+**Válasz:**  
+
+A "Kezdhetjük" gombra kattintva végbemegy a funkció, és kiírja a választ a console-ba.
+
+![plot](./public/images/tasks/task3.png)
+
+## Task 4:
+A designer a következőképpen álmodja meg a beviteli mező működését:
+
+![plot](./public/images/tasks/task4.png)
+
+
+Mi lehet ezzel a működéssel az általános probléma?
+
+**Válasz:**  
+
+Az ilyen floating label inputokkal az általános probléma, hogy a felhasználók azt hihetik, hogy a mező már ki van töltve, holott üres. Továbbá, akadálymentességi problémát okozhat a látásérültek számára.
+
+---
+---
+---
+---
+---
 
 # ComnicaFrontendTestTask
 

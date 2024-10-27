@@ -1,7 +1,13 @@
 import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Title } from '@angular/platform-browser';
+import { UserService } from './services/user.service';
+
+// Components
 import { AppButtonComponent } from './components/app-button/app-button.component';
+
+
+
 
 @Component({
   selector: 'app-root',
@@ -20,4 +26,15 @@ export class AppComponent {
   onClick() {
     console.log('Kezdhetjük');
   }
+
+
+
+/* Task 3 */
+userService = inject(UserService);
+
+onFetchUsers() {
+  this.userService.fetchUsersAndAssignColors().subscribe(users => {
+    console.log(users);
+  });
+}
 }
